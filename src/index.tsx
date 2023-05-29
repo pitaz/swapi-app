@@ -23,7 +23,6 @@ root.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
       <DataProvider>
-
       <RouterProvider router={routes} />
       </DataProvider>
     </ApolloProvider>
