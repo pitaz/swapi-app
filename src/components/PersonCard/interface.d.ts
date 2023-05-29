@@ -1,4 +1,4 @@
-interface IPersonCard {
+export interface IPersonCard {
   name: string;
   onClick?: () => void;
 }

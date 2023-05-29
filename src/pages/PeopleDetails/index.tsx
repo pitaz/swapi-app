@@ -1,13 +1,13 @@
-import * as React from "react";
-import { CardWrapper, PageButton, PeoplePageWrapper } from "./styles";
-import { DataContextType } from "../../context/interface";
-import { DataContext } from "../../context/DataProvider";
-import { useNavigate } from "react-router-dom";
-import { PersonImage } from "../../components/PersonCard/styles";
+import * as React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { CardWrapper, PageButton, PeoplePageWrapper } from './styles';
+import { PersonImage } from '../../components/PersonCard/styles';
+import { DataContext } from '../../context/DataProvider';
+import { DataContextType } from '../../context/interface';
 
-export const PeopleDetails = () => {
+export function PeopleDetails() {
   const { data } = React.useContext(DataContext) as DataContextType;
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   return (
     <PeoplePageWrapper>
@@ -24,4 +24,4 @@ export const PeopleDetails = () => {
       </CardWrapper>
     </PeoplePageWrapper>
   );
-};
+}

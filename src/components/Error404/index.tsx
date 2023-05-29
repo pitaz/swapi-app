@@ -1,5 +1,5 @@
-import { useRouteError } from "react-router-dom";
-import { ErrorPageWrapper, ErrorText } from "./styles";
+import { useRouteError } from 'react-router-dom';
+import { ErrorPageWrapper, ErrorText } from './styles';
 
 export default function ErrorPage() {
   const error: any = useRouteError();

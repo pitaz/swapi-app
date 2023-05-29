@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PeoplePageWrapper = styled.div`
   padding: 5rem 1.3rem;
@@ -36,12 +36,13 @@ export const SearchInput = styled.input`
 
 export const PeopleGridWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   width: 50%;
   gap: 1rem;
   margin-top: 4rem;
   @media screen and (max-width: 712px) {
-    width: 80%
+    width: 80%;
+     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 `;
 

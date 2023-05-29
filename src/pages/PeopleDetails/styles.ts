@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const PeoplePageWrapper = styled.div`
   padding: 5rem 1.3rem;

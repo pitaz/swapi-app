@@ -1,4 +1,4 @@
-import { NodataWrapper, NodataText } from "./styles";
+import { NodataWrapper, NodataText } from './styles';
 
 export default function NoData() {
   return (
