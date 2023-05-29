@@ -3,8 +3,6 @@ import { ErrorPageWrapper, ErrorText } from "./styles";
 
 export default function ErrorPage() {
   const error: any = useRouteError();
-
-
   return (
     <ErrorPageWrapper>
       <h1>Oops!</h1>

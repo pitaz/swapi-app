@@ -1,10 +1,5 @@
 import { PersonCardWrapper, PersonImage } from "./styles";
 
-interface IPersonCard {
-  name: string;
-  onClick?: () => void;
-}
-
 export const PersonCard: React.FC<IPersonCard> = ({ name, onClick }) => {
   return (
     <PersonCardWrapper onClick={onClick}>

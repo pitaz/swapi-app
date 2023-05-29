@@ -2,7 +2,7 @@ import { gql } from '@apollo/client';
 
 export const GET_PEOPLE_LIST = gql`
   query ($limit: Int, $page: String, $search: String) {
-  movies(limit: $limit, page: $page, search: $search) {
+  people(limit: $limit, page: $page, search: $search) {
     count
     next
     previous

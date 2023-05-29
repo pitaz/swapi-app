@@ -37,12 +37,12 @@ export const People = () => {
   if (error) return <p>Error : {error.message}</p>;
 
   const handleNext = () => {
-    if(data?.movies?.next) {
+    if(data?.people?.next) {
       setPage(page+1)
     }
   }
   const handlePrevious = () => {
-    if(data.movies.previous) {
+    if(data.people.previous) {
       setPage(page-1)
     }
   }
@@ -56,7 +56,7 @@ export const People = () => {
         <SearchInput placeholder="Search" onChange={handleSearch}/>
        
         <PeopleGridWrapper>
-          {data.movies.results.map((person: IData, index: number) => (
+          {data.people.results.map((person: IData, index: number) => (
             <PersonCard key={index} name={person.name} onClick={() => navigation(person)} />
           ))}
         </PeopleGridWrapper>
@@ -64,11 +64,11 @@ export const People = () => {
       </>
      
       <PageButtonWrapper>
-        {data.movies.previous && <PageButton onClick={handlePrevious}>Prev</PageButton>}
-        {data.movies.next && <PageButton onClick={handleNext}>Next</PageButton>}
+        {data.people.previous && <PageButton onClick={handlePrevious}>Prev</PageButton>}
+        {data.people.next && <PageButton onClick={handleNext}>Next</PageButton>}
       </PageButtonWrapper>
       {
-          data.movies.results.length === 0 && <NoData />
+          data.people.results.length === 0 && <NoData />
         }
     </PeoplePageWrapper>
   );
